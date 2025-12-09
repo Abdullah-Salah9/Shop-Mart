@@ -13,7 +13,7 @@ export default function AddToWishlist({productId}: {productId:string}) {
 
     const session = useSession();
 
-    let router = useRouter();
+    const router = useRouter();
 
     async function addToWishlist() {
         if (session.status == 'authenticated') {
